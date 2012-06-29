@@ -4,4 +4,16 @@
  * Модуль для типа ноды job_post
  */
 
+function job_post_node_info() {
+  return array(
+    'job_post' => array(
+      'name' => t('Job Post'), //Объявление о рабочей вакансии
+      'base' => 'job_post',
+      'description' => t('Use this content type to post a job'),
+      'has_title' => TRUE,
+      'title_lable' => t('Job Title'), //Название работы
+      'help' => t('Enter the job title, job description, and the name of the company that posted the job'),
+    ),
+  );
+}
 
